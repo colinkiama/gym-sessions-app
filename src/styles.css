@@ -1,3 +1,9 @@
 .App {
   font-family: sans-serif;
 }
+
+fieldset {
+  padding: 0;
+  display: block;
+  border: 0;
+}

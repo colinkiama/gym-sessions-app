@@ -4,24 +4,25 @@ export default function App() {
   return (
     <div className="App">
       <h1>Gym Sessions</h1>
-      <h2>Pick a facility</h2>
-      <div>
+      <h2>Select a facility</h2>
+      <label>
+        Search:<br></br>
+        <input type="search"></input>
+      </label>
+      <fieldset>
         <label>
-          Search:<br></br>
-          <input type="search"></input>
+          <input type="radio" name="facility" value="Ipswich"></input>
+          Ipswich
         </label>
-        <ul>
-          <li>
-            <button>Ipswich</button>
-          </li>
-          <li>
-            <button>Colchester</button>
-          </li>
-          <li>
-            <button>Chelmsford</button>
-          </li>
-        </ul>
-      </div>
+        <label>
+          <input type="radio" name="facility" value="Colcester"></input>
+          Colchester
+        </label>
+        <label>
+          <input type="radio" name="facility" value="Chelmsford"></input>
+          Chelmsford
+        </label>
+      </fieldset>
       <h2>Activites in (Facility Name)</h2>
       <div>
         <label>
