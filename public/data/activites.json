@@ -1,0 +1,185 @@
+{
+  "data": [
+    {
+      "id": 1,
+      "name": "Diving",
+      "start_time": "9:00",
+      "end_time": "10:00",
+      "level": "Experienced",
+      "location": "Swimming pool 2",
+      "facility_id": 84,
+      "tags": [
+        {
+          "id": 540,
+          "name": "Swimming"
+        }
+      ]
+    },
+    {
+      "id": 2,
+      "name": "Swimming",
+      "start_time": "9:30",
+      "end_time": "11:30",
+      "level": "Beginner",
+      "location": "Swimming pool 1",
+      "facility_id": 84,
+      "tags": [
+        {
+          "id": 540,
+          "name": "Swimming"
+        }
+      ]
+    },
+    {
+      "id": 3,
+      "name": "Bodypump",
+      "start_time": "9:30",
+      "end_time": "10:30",
+      "level": "Experienced",
+      "location": "Gym",
+      "facility_id": 84,
+      "tags": [
+        {
+          "id": 854,
+          "name": "Gym"
+        },
+        {
+          "id": 65,
+          "name": "Bodypump"
+        }
+      ]
+    },
+    {
+      "id": 4,
+      "name": "Strength & Conditioning",
+      "start_time": "9:00",
+      "end_time": "10:00",
+      "level": "Experienced",
+      "location": "Gym",
+      "facility_id": 84,
+      "tags": [
+        {
+          "id": 854,
+          "name": "Gym"
+        }
+      ]
+    },
+    {
+      "id": 5,
+      "name": "Yoga",
+      "start_time": "10:00",
+      "end_time": "11:00",
+      "level": "Beginner",
+      "location": "Studio 1",
+      "facility_id": 103,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        }
+      ]
+    },
+    {
+      "id": 6,
+      "name": "Spin",
+      "start_time": "10:30",
+      "end_time": "12:00",
+      "level": "Beginner",
+      "location": "Studio 2",
+      "facility_id": 103,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        },
+        {
+          "id": 12,
+          "name": "Spin"
+        }
+      ]
+    },
+    {
+      "id": 7,
+      "name": "Yoga",
+      "start_time": "9:30",
+      "end_time": "10:40",
+      "level": "Experienced",
+      "location": "Studio 1",
+      "facility_id": 103,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        }
+      ]
+    },
+    {
+      "id": 8,
+      "name": "Spin",
+      "start_time": "9:30",
+      "end_time": "10:30",
+      "level": "Experienced",
+      "location": "Studio 2",
+      "facility_id": 103,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        },
+        {
+          "id": 12,
+          "name": "Spin"
+        }
+      ]
+    },
+    {
+      "id": 9,
+      "name": "Pilates",
+      "start_time": "9:00",
+      "end_time": "10:00",
+      "level": "Beginner",
+      "location": "Studio A",
+      "facility_id": 52,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        }
+      ]
+    },
+    {
+      "id": 10,
+      "name": "HIIT",
+      "start_time": "9:30",
+      "end_time": "10:30",
+      "level": "Intermediate",
+      "location": "Studio B",
+      "facility_id": 52,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        },
+        {
+          "id": 174,
+          "name": "Interval training"
+        }
+      ]
+    },
+    {
+      "id": 11,
+      "name": "Yoga",
+      "start_time": "10:30",
+      "end_time": "10:30",
+      "level": "Experienced",
+      "location": "Studio A",
+      "facility_id": 52,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,46 @@
+{
+  "data": [
+    {
+      "name": "Ipswich",
+      "id": 52,
+      "tags": [
+        {
+          "id": 156,
+          "name": "Studio"
+        }
+      ]
+    },
+    {
+      "name": "Colchester",
+      "id": 84,
+      "tags": [
+        {
+          "id": 540,
+          "name": "Swimming"
+        },
+        {
+          "id": 854,
+          "name": "Gym"
+        }
+      ]
+    },
+    {
+      "name": "Chelmsford",
+      "id": 103,
+      "tags": [
+        {
+          "id": 12,
+          "name": "Spin"
+        },
+        {
+          "id": 432,
+          "name": "Yoga"
+        },
+        {
+          "id": 854,
+          "name": "Gym"
+        }
+      ]
+    }
+  ]
+}
