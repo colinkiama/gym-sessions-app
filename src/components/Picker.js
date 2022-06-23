@@ -1,5 +1,4 @@
 export default function Picker(props) {
-  console.log(props);
   return (
     <div>
       <label>
@@ -9,12 +8,13 @@ export default function Picker(props) {
       <fieldset>
         {props.items.map((item) => {
           return (
-            <label>
+            <label key={item.id}>
               <input
-                key={item.id}
                 type="radio"
                 name="facility"
                 value={item.name}
+                onChange={() => props.onPick(item.id)}
+                checked={props.selectedId === item.id}
               ></input>
               {item.name}
             </label>

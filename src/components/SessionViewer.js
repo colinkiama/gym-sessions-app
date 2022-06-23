@@ -21,29 +21,48 @@ export default class SessionViewer extends React.Component {
     };
   }
 
+  facilitySelected = (id) => {
+    this.setState(
+      (state) => {
+        return {
+          facilitiesData: {
+            ...state.facilitiesData,
+            selectedId: id
+          }
+        };
+      },
+      () => console.log("New state aftter facilitiy selection:", this.state)
+    );
+  };
+
   async componentDidMount() {
     let activitiesFetchResponse = await fetch(this.props.activitiesUrl);
-    this.payloads = {
-      ...this.payloads,
-      activities: await activitiesFetchResponse.json()
-    };
-
     let facilitiesFetchResponse = await fetch(this.props.facilitiesUrl);
     this.payloads = {
       ...this.payloads,
       facilities: await facilitiesFetchResponse.json()
     };
 
-    this.setState({
-      activitiesData: {
-        ...this.state.activitiesData,
-        items: this.payloads.activities.data
+    this.payloads = {
+      ...this.payloads,
+      activities: await activitiesFetchResponse.json()
+    };
+
+    this.setState(
+      (state) => {
+        return {
+          activitiesData: {
+            ...state.activitiesData,
+            items: this.payloads.activities.data
+          },
+          facilitiesData: {
+            ...state.facilitiesData,
+            items: this.payloads.facilities.data
+          }
+        };
       },
-      facilitiesData: {
-        ...this.state.facilitiesData,
-        items: this.payloads.facilities.data
-      }
-    });
+      () => console.log("State update on mount:", this.state)
+    );
   }
 
   render() {
@@ -54,6 +73,7 @@ export default class SessionViewer extends React.Component {
         <Picker
           selectedId={this.state.facilitiesData.selectedId}
           items={this.state.facilitiesData.items}
+          onPick={this.facilitySelected}
         ></Picker>
 
         <h2>Activites in (Facility Name)</h2>
