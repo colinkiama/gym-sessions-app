@@ -33,6 +33,21 @@ export default class SessionViewer extends React.Component {
       },
       () => console.log("New state aftter facilitiy selection:", this.state)
     );
+
+    this.updateTimetableData();
+  };
+
+  updateTimetableData = () => {
+    this.setState((state) => {
+      return {
+        activitiesData: {
+          ...state.activitiesData,
+          items: this.payloads.activities.data.filter(
+            (item) => item.facility_id === state.facilitiesData.selectedId
+          )
+        }
+      };
+    });
   };
 
   async componentDidMount() {
@@ -77,10 +92,7 @@ export default class SessionViewer extends React.Component {
         ></Picker>
 
         <h2>Activites in (Facility Name)</h2>
-        <Timetable
-          selectedFacilityId={this.state.facilitiesData.selectedId}
-          items={this.state.activitiesData.items}
-        ></Timetable>
+        <Timetable items={this.state.activitiesData.items}></Timetable>
       </>
     );
   }
