@@ -1,6 +1,8 @@
 import React from "react";
 
-export default function Picker() {
+export default function Timetable(props) {
+  console.log(props.items);
+
   return (
     <div>
       <label>
@@ -16,21 +18,15 @@ export default function Picker() {
           </tr>
         </thead>
         <tbody>
-          <tr>
-            <td>Pilates</td>
-            <td>9:00</td>
-            <td>10:00</td>
-          </tr>
-          <tr>
-            <td>HITT</td>
-            <td>9:30</td>
-            <td>10:30</td>
-          </tr>
-          <tr>
-            <td>Yoga</td>
-            <td>10:30</td>
-            <td>10:30</td>
-          </tr>
+          {props.items.map((item) => {
+            return (
+              <tr key={item.id}>
+                <td>{item.name}</td>
+                <td>{item.start_time}</td>
+                <td>{item.end_time}</td>
+              </tr>
+            );
+          })}
         </tbody>
       </table>
     </div>

@@ -77,7 +77,10 @@ export default class SessionViewer extends React.Component {
         ></Picker>
 
         <h2>Activites in (Facility Name)</h2>
-        <Timetable></Timetable>
+        <Timetable
+          selectedFacilityId={this.state.facilitiesData.selectedId}
+          items={this.state.activitiesData.items}
+        ></Timetable>
       </>
     );
   }
